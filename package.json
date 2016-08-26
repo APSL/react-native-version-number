@@ -1,0 +1,37 @@
+{
+  "name": "react-native-version-number",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/APSL/react-native-version-number.git"
+  },
+  "tags": [
+    "react",
+    "react-native",
+    "react-component",
+    "ios"
+  ],
+  "keywords": [
+    "react",
+    "react-native",
+    "ios",
+    "react-component"
+  ],
+  "author": "Alvaro Medina Ballester <amedina@apsl.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/APSL/react-native-version-number/issues"
+  },
+  "homepage": "https://github.com/APSL/react-native-version-number#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.3.1",
+    "eslint-plugin-react": "^6.1.2"
+  }
+}
