@@ -2,7 +2,14 @@
 # react-native-version-number
 <img src="https://travis-ci.org/APSL/react-native-version-number.svg?branch=master" />
 
-Returns the `CFBundleShortVersionString` and the `CFBundleVersion`. For Android, returns the `versionCode` and `versionName`.
+Returns the `CFBundleShortVersionString` and the `CFBundleVersion`. For Android, returns the `versionName` and `versionCode`.
+
+
+|  | iOS | Android | Example |
+| --- | --- | --- | --- |
+| appVersion | `CFBundleShortVersionString` | `versionName` | `1.0.2` |
+| buildVersion | `CFBundleVersion` | `versionCode` | `42` |
+
 
 ## Getting started
 
