@@ -13,11 +13,9 @@ Returns the `CFBundleShortVersionString` and the `CFBundleVersion`. For Android,
 
 ## Getting started
 
-`$ npm install react-native-version-number --save`
+Install the package
 
-### Mostly automatic installation
-
-`$ react-native link react-native-version-number`
+`$ yarn add react-native-version-number`
 
 ## Usage
 ```javascript
