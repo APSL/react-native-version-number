@@ -17,6 +17,10 @@ Install the package
 
 `$ yarn add react-native-version-number`
 
+Link
+
+`$ react-native link`
+
 ## Usage
 ```javascript
 import VersionNumber from 'react-native-version-number';
