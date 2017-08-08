@@ -13,8 +13,9 @@ RCT_EXPORT_MODULE()
 {
     return @{@"appVersion"  : [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"],
              @"buildVersion": [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey],
-             @"bundleIdentifier"  : [[NSBundle mainBundle] bundleIdentifier]]
-           };
+             @"bundleIdentifier"  : [[NSBundle mainBundle] bundleIdentifier]
+            };
+           
 }
 
 @end
