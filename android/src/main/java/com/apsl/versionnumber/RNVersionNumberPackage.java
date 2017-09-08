@@ -17,7 +17,7 @@ public class RNVersionNumberPackage implements ReactPackage {
       return Arrays.<NativeModule>asList(new RNVersionNumberModule(reactContext));
     }
 
-    @Override
+    // Deprecated in RN 0.47 - facebook/react-native@ce6fb33
     public List<Class<? extends JavaScriptModule>> createJSModules() {
       return Collections.emptyList();
     }
