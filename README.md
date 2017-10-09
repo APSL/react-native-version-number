@@ -29,7 +29,7 @@ import VersionNumber from 'react-native-version-number';
 console.log(VersionNumber.appVersion);
 console.log(VersionNumber.buildVersion);
 
-console.log(VersionNumber.bundleIdentifier); // IOS only
+console.log(VersionNumber.bundleIdentifier); // iOS only
 
 ```
 
