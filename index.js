@@ -10,9 +10,9 @@ type VersionObject = {
 }
 
 const VersionNumber: VersionObject = {
-  appVersion: RNVersionNumber.appVersion,
-  buildVersion: RNVersionNumber.buildVersion,
-  bundleIdentifier: RNVersionNumber.bundleIdentifier
+  appVersion: RNVersionNumber && RNVersionNumber.appVersion,
+  buildVersion: RNVersionNumber && RNVersionNumber.buildVersion,
+  bundleIdentifier: RNVersionNumber && RNVersionNumber.bundleIdentifier
 }
 
 export default VersionNumber;
