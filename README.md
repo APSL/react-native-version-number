@@ -1,6 +1,11 @@
 
 # react-native-version-number
+
+<p>
 <img src="https://travis-ci.org/APSL/react-native-version-number.svg?branch=master" />
+<img src="https://img.shields.io/npm/dm/react-native-version-number.svg" />
+<img src="https://img.shields.io/npm/dt/react-native-version-number.svg" />
+</p>
 
 Returns the `CFBundleShortVersionString` and the `CFBundleVersion` and `bundleIdentifier` on IOS. For Android, returns the `versionName`, `versionCode` and `applicationId`.
 
