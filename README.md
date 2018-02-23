@@ -37,7 +37,7 @@ include ':react-native-version-number'
 project(':react-native-version-number').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-version-number/android')
 ```
 
-2. In your android/app/build.gradle file, add the `:react-native-splash-screen` project as a compile-time dependency:
+2. In your android/app/build.gradle file, add the `:react-native-version-number` project as a compile-time dependency:
 
 ```java
 ...
@@ -47,7 +47,7 @@ dependencies {
 }
 ```
 
-3. Update the MainApplication.java file to use `react-native-splash-screen` via the following changes:   
+3. Update the MainApplication.java file to use `react-native-version-number` via the following changes:   
 
 ```java
 import com.apsl.versionnumber.RNVersionNumberPackage;
