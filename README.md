@@ -27,6 +27,48 @@ Link
 
 `$ react-native link`
 
+#### Manual installation  
+
+**Android:**
+
+1. In your android/settings.gradle file, make the following additions:
+```java
+include ':react-native-version-number'   
+project(':react-native-version-number').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-version-number/android')
+```
+
+2. In your android/app/build.gradle file, add the `:react-native-splash-screen` project as a compile-time dependency:
+
+```java
+...
+dependencies {
+    ...
+    compile project(':react-native-version-number')
+}
+```
+
+3. Update the MainApplication.java file to use `react-native-splash-screen` via the following changes:   
+
+```java
+import com.apsl.versionnumber.RNVersionNumberPackage;
+
+public class MainApplication extends Application implements ReactApplication {
+
+    private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+        ...
+        @Override
+        protected List<ReactPackage> getPackages() {
+            return Arrays.<ReactPackage>asList(
+                    new MainReactPackage(),
+                    new RNVersionNumberPackage(), //hare
+            );
+        }
+    };
+    ...
+}
+```
+
+
 ## Usage
 ```javascript
 import VersionNumber from 'react-native-version-number';
