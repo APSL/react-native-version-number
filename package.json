@@ -1,7 +1,7 @@
 {
   "name": "react-native-version-number",
   "version": "0.3.2",
-  "description": "",
+  "description": "Access app version inside React Native",
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/APSL/react-native-version-number.git"
+    "url": "https://github.com/APSL/react-native-version-number.git"
   },
   "tags": ["react", "react-native", "react-component", "ios"],
   "keywords": ["react", "react-native", "ios", "react-component"],
