@@ -1,7 +1,7 @@
 {
   "name": "react-native-version-number",
   "version": "0.3.2",
-  "description": "Access app version inside react native",
+  "description": "Access app version inside React Native",
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",
