@@ -40,7 +40,7 @@ public class RNVersionNumberModule extends ReactContextBaseJavaModule {
     try {
       constants.put(APP_VERSION, packageManager.getPackageInfo(packageName, 0).versionName);
       constants.put(APP_BUILD, packageManager.getPackageInfo(packageName, 0).versionCode);
-      constants.put(APP_INSTALLATION_SOURCE, packageManager.getInstallerPackageName());
+      constants.put(APP_INSTALLATION_SOURCE, packageManager.getInstallerPackageName(packageName));
       constants.put(APP_ID, packageName);
     } catch (NameNotFoundException e) {
       e.printStackTrace();
