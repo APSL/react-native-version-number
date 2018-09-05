@@ -20,6 +20,7 @@ public class RNVersionNumberModule extends ReactContextBaseJavaModule {
   private static final String APP_VERSION = "appVersion";
   private static final String APP_BUILD = "buildVersion";
   private static final String APP_ID = "bundleIdentifier";
+  private static final String APP_INSTALLATION_SOURCE = "installationSource";
 
   public RNVersionNumberModule(ReactApplicationContext reactContext) {
     super(reactContext);
@@ -39,6 +40,7 @@ public class RNVersionNumberModule extends ReactContextBaseJavaModule {
     try {
       constants.put(APP_VERSION, packageManager.getPackageInfo(packageName, 0).versionName);
       constants.put(APP_BUILD, packageManager.getPackageInfo(packageName, 0).versionCode);
+      constants.put(APP_INSTALLATION_SOURCE, packageManager.getInstallerPackageName());
       constants.put(APP_ID, packageName);
     } catch (NameNotFoundException e) {
       e.printStackTrace();
