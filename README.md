@@ -7,14 +7,14 @@
 <img src="https://img.shields.io/npm/dt/react-native-version-number.svg" />
 </p>
 
-Returns the `CFBundleShortVersionString` and the `CFBundleVersion` and `bundleIdentifier` on IOS. For Android, returns the `versionName`, `versionCode` and `applicationId`.
+Returns the `CFBundleShortVersionString` and the `CFBundleVersion` and `bundleIdentifier` on IOS. For Android, returns the `versionName`, `versionCode` and `applicationId`. And For Windows, returns the `version` properties `major, minor, and build` numbers as the appVersion, the `revision` number as the version, and the `name` property as the bundleIdentifier.
 
 
-|  | iOS | Android | Example |
-| --- | --- | --- | --- |
-| appVersion | `CFBundleShortVersionString` | `versionName` | `1.0.2` |
-| buildVersion | `CFBundleVersion` | `versionCode` | `42` |
-| bundleIdentifier | `bundleIdentifier` | `applicationId` | `com.foo.bar.MyApp`|
+|  | iOS | Android | Windows | Example |
+| --- | --- | --- | --- | --- |
+| appVersion | `CFBundleShortVersionString` | `versionName` | `Identity[version]` | `1.0.2` |
+| buildVersion | `CFBundleVersion` | `versionCode` | `Identity[version]` | `42` |
+| bundleIdentifier | `bundleIdentifier` | `applicationId` | `Identity[name]` | `com.foo.bar.MyApp`|
 
 
 ## Getting started
