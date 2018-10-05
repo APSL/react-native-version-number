@@ -68,6 +68,25 @@ public class MainApplication extends Application implements ReactApplication {
 }
 ```
 
+**Windows**
+
+1. In your windows/{app_name}/MainReactNativeHost file add the RNVersionNumber package to the package list
+
+```c#
+using Com.Apsl.VersionNumber;
+...
+protected override List<IReactPackage> Packages => new List<IReactPackage>
+{
+    new RNVersionNumberPackage(),   
+};
+```
+
+2. Add RNVersionNumber to your solution
+
+3. Add RNVersionNumber to your ReactNative project's references
+
+For a step by step guide visit:
+https://github.com/Microsoft/react-native-windows/blob/master/docs/LinkingLibrariesWindows.md
 
 ## Usage
 ```javascript
