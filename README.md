@@ -68,6 +68,20 @@ public class MainApplication extends Application implements ReactApplication {
 }
 ```
 
+**iOS**
+
+In XCode, in the project navigator:
+
+    Right click Libraries
+    Add Files to [your project's name]
+    Go to `node_modules/react-native-version-number`
+    Add the .xcodeproj file
+
+In XCode, in the project navigator, select your project.
+
+    Add the `libRNVersionNumber.a` from the deviceinfo project to your project's Build Phases ➜ Link Binary With Libraries
+    Click .xcodeproj file you added before in the project navigator and go the Build Settings tab. Make sure All is toggled on (instead of Basic).
+    Add header search path: `$(SRCROOT)/../node_modules/react-native-version-number/ios`
 
 ## Usage
 ```javascript
