@@ -25,7 +25,7 @@ Install the package
 
 Link
 
-`$ react-native link`
+`$ react-native link react-native-version-number`
 
 #### Manual installation  
 
