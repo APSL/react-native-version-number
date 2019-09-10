@@ -13,6 +13,7 @@ RCT_EXPORT_MODULE()
 {
     return @{@"appVersion"  : [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"],
              @"buildVersion": [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey],
+             @"installationSource"  : [[[NSBundle mainBundle] appStoreReceiptURL] path],
              @"bundleIdentifier"  : [[NSBundle mainBundle] bundleIdentifier]
             };
            
