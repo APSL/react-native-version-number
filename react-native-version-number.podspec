@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.platform       = :ios, "7.0"
   s.source         = { :git => "#{package_json["repository"]["url"]}.git", :tag => "v#{s.version}" }
   s.source_files   = 'ios/*.{h,m}'
-  s.dependency 'React'
+  s.dependency 'React-Core'
 
 end
